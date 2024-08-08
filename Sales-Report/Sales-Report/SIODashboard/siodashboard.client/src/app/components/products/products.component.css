@@ -1,0 +1,30 @@
+/* Add some padding around the card */
+.card {
+  margin-top: 20px;
+}
+
+/* Center the dropdown and canvas */
+.form-group {
+  margin-top: 20px;
+}
+
+canvas {
+  margin-top: 20px;
+}
+
+/* Styling for the card header */
+.card-header {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+/* Styling for the card title */
+.card-title {
+  font-size: 1.5rem;
+}
+
+/* Styling for the sales amount */
+.card-text .text-success {
+  font-weight: bold;
+  font-size: 1.25rem;
+}

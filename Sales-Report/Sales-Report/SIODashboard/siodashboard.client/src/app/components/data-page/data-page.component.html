@@ -1,0 +1,18 @@
+
+<app-showcase-buttons></app-showcase-buttons>
+<br>
+<div class="dropdown" back>
+  <button type="button" class="btn btn-sm btn-outline-secondary dropdown-toggle d-flex align-items-center gap-1" data-bs-toggle="dropdown" aria-expanded="false">
+    <svg class="bi" width="32" height="32"><use xlink:href="#calendar3"></use></svg>
+    {{ selectedLabel }}
+  </button>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" (click)="handleClick('Months')">Months</a></li>
+    <li><a class="dropdown-item" (click)="handleClick('Quarter')">Quarter</a></li>
+    <li><a class="dropdown-item" (click)="handleClick('Semester')">Semester</a></li>
+  </ul>
+</div>
+<br>
+
+<canvas #myChart class="my-4 w-100" width="850" height="250"></canvas>
+

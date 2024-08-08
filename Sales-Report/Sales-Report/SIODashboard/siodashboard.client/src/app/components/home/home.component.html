@@ -1,0 +1,158 @@
+<div class="container mt-5">
+
+  <div class="row justify-content-center" style="margin:50px">
+    <div class="col-md-8">
+      <div class="text-center mx-auto">
+        <h1 class="text-body-emphasis">Inicia os teus relatórios!</h1>
+        <p>Escolhe um ficheiro saft para que possas criar um relatório de vendas sobre a tua Empresa! Para além disso, coloca o nome da empresa para o relatório!</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="row g-5">
+    <div class="col-md-6 text-center">
+      <h2 class="text-body-emphasis">
+        <span class="material-symbols-outlined" style="color:dodgerblue">
+          calendar_month
+        </span>
+        Calendar
+      </h2>
+      <p>
+        No calendário, terás acesso a um relatório de vendas detalhado para o teu ano fiscal. Isso incluirá informações sobre vendas por:
+      </p>
+      <ul class="list-unstyled ps-0 text-center">
+        <li class="d-flex align-items-center">
+          <span class="material-symbols-outlined me-2">
+            chevron_right
+          </span>
+          Meses
+        </li>
+        <li class="d-flex align-items-center">
+          <span class="material-symbols-outlined me-2">
+            chevron_right
+          </span>
+          Trimestres
+        </li>
+        <li class="d-flex align-items-center">
+          <span class="material-symbols-outlined me-2">
+            chevron_right
+          </span>
+          Semestres
+        </li>
+        <li class="d-flex align-items-center">
+          <span class="material-symbols-outlined me-2">
+            chevron_right
+          </span>
+          Ano
+        </li>
+      </ul>
+
+    </div>
+
+    <div class="col-md-6 text-center">
+      <h2 class="text-body-emphasis">
+        <span class="material-symbols-outlined" style="color:red">
+          groups
+        </span>
+        Clients
+      </h2>
+      <p>
+        No calendário, terás acesso a um relatório sobre as vendas dos teus clientes. Isso incluirá informações sobre vendas por:
+      </p>
+      <ul class="list-unstyled ps-0">
+        <li class="d-flex align-items-center">
+          <span class="material-symbols-outlined">
+            chevron_right
+          </span>
+          Anual
+        </li>
+        <li class="d-flex align-items-center">
+          <span class="material-symbols-outlined">
+            chevron_right
+          </span>
+          Meses
+        </li>
+        <li class="d-flex align-items-center">
+          <span class="material-symbols-outlined">
+            chevron_right
+          </span>
+          Quantidade de Produto
+        </li>
+      </ul>
+    </div>
+
+    <div class="col-md-6 text-center">
+      <h2 class="text-body-emphasis">
+        <span class="material-symbols-outlined" style="color:orange">
+          inventory
+        </span>
+        Produtos
+      </h2>
+      <p>
+        No calendário, terás acesso a um relatório sobre as vendas dos teus produtos. Isso incluirá informações sobre vendas por:
+      </p>
+      <ul class="list-unstyled ps-0">
+        <li class="d-flex align-items-center">
+          <span class="material-symbols-outlined">
+            chevron_right
+          </span>
+          Cidade
+        </li>
+        <li class="d-flex align-items-center">
+          <span class="material-symbols-outlined">
+            chevron_right
+          </span>
+          Mes
+        </li>
+        <li class="d-flex align-items-center">
+          <span class="material-symbols-outlined">
+            chevron_right
+          </span>
+          Produto mais vendido
+        </li>
+      </ul>
+    </div>
+
+    <div class="col-md-6 text-center">
+      <h2 class="text-body-emphasis">
+        <span class="material-symbols-outlined" style="color:forestgreen">
+          map
+        </span>
+        Regiões
+      </h2>
+      <p>
+        No calendário, terás acesso a um relatório sobre as regiões de onde foram efetuadas as vendas. Isso incluirá informações sobre vendas por:
+      </p>
+      <ul class="list-unstyled ps-0">
+        <li class="d-flex align-items-center">
+          <span class="material-symbols-outlined">
+            chevron_right
+          </span>
+          Cidades por épocas sazonais
+        </li>
+        <li class="d-flex align-items-center">
+          <span class="material-symbols-outlined">
+            chevron_right
+          </span>
+          País
+        </li>
+      </ul>
+    </div>
+
+  </div>
+
+
+  <div class="mb-5" style="margin:50px">
+
+    <div class="d-flex justify-content-center mt-3">
+      <label for="fileInput" class="btn btn-primary mr-2 text-left" (change)="onFileSelected($event)" style="margin-right: 10px;">
+        Escolher Ficheiro
+        <input type="file" id="fileInput" class="d-none">
+      </label>
+
+      <button type="button" class="btn btn-primary" style="padding: 10px;" [disabled]="!enable" (click)="onSubmit()">Enviar Ficheiro</button>
+
+    </div>
+  </div>
+
+</div>

@@ -1,0 +1,21 @@
+.container {
+  margin-top: 20px;
+}
+
+
+.donut-chart {
+  max-width: 1000px;
+  max-height: 600px;
+  width: 500px;
+  height: 500px;
+}
+
+.rectangle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 500px;
+  height: 30px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: 1px solid black;
+}

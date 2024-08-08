@@ -1,0 +1,70 @@
+<div class="d-flex min-vh-100">
+  <!-- Sidebar -->
+  <div class="d-flex flex-column flex-shrink-0 p-3 text-bg-blue" style="width: 180px; background-color: #0d6efd;">
+    <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+      <svg class="bi pe-none me-2" width="10" height="32"><use xlink:href="#bootstrap"></use></svg>
+      <span class="fs-4">
+        {{ company ? company.name : 'Dashboard' }}
+      </span>
+      <span class="material-symbols-outlined">
+        monitoring
+      </span>
+    </a>
+    <hr>
+    <ul class="nav nav-pills flex-column mb-auto">
+      <li class="nav-item">
+        <a href="#" class="nav-link text-white d-flex align-items-center" aria-current="page">
+          <span class="material-symbols-outlined me-2">
+            home
+          </span>
+          Home
+        </a>
+      </li>
+      <li class="nav-item" *ngIf="ready">
+        <a href="/calendar" class="nav-link text-white d-flex align-items-center" aria-current="page">
+          <span class="material-symbols-outlined me-2">
+            calendar_month
+          </span>
+          Calendar
+        </a>
+      </li>
+      <li class="nav-item"  *ngIf="ready">
+        <a href="/products" class="nav-link text-white d-flex align-items-center" aria-current="page">
+          <span class="material-symbols-outlined me-2">
+            inventory
+          </span>
+          Products
+        </a>
+      </li>
+      <li class="nav-item"  *ngIf="ready">
+        <a href="/clients" class="nav-link text-white d-flex align-items-center" aria-current="page">
+          <span class="material-symbols-outlined me-2">
+            groups
+          </span>
+          Client
+        </a>
+      </li>
+      <li class="nav-item"  *ngIf="ready">
+        <a href="/region" class="nav-link text-white d-flex align-items-center" aria-current="page">
+          <span class="material-symbols-outlined me-2">
+            map
+          </span>
+          Region
+        </a>
+      </li>
+    </ul>
+    <hr>
+    <div *ngIf="company?.companyId" class="company-info">
+      <p><strong>NIF:</strong> {{ company?.nif }}</p>
+      <p><strong>Fiscal Year:</strong> {{ company?.fiscalYear }}</p>
+      <p>Country: {{ company?.country }}</p>
+      <p>City: {{ company?.city }}</p>
+      <p>Postal Code: {{ company?.postalCode }}</p>
+      <p>Street: {{ company?.street }}</p>
+    </div>
+  </div>
+  <!-- Main content -->
+  <div class="flex-grow-1 p-3">
+    <router-outlet></router-outlet>
+  </div>
+</div>

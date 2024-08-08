@@ -1,0 +1,20 @@
+.nav-item:hover {
+  background-color: cornflowerblue;
+  color:black;
+}
+.company-info {
+  width: 150px; /* Ajuste o tamanho conforme necessário */
+  padding: 10px; /* Adicione algum preenchimento */
+  border-radius: 5px; /* Adicione cantos arredondados */
+  color:white;
+}
+
+  .company-info p {
+    margin: 0; /* Remova a margem padrão */
+    padding: 2px 0; /* Adicione um pequeno preenchimento vertical */
+    font-size: 0.9rem; /* Ajuste o tamanho da fonte */
+  }
+
+  hr{
+      color:white;
+  }
